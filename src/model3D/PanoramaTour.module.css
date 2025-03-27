@@ -1,0 +1,124 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.content{
+    display: flex;
+    direction: row;
+    justify-content: center;
+
+}
+
+.leftArrow{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.panoramaContent{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh; 
+    overflow-y: auto; 
+    flex-grow: 1;
+}
+.panoramaButtonsContainer {
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181818;
+    flex-wrap: wrap;
+}
+
+.buttonsCard {
+    border: 1px solid #6b6b6b;
+    padding: 1rem;
+    text-align: center;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonsHeader{
+    margin-bottom: 2;
+    color: #fff;
+    font-weight: bold;
+    text-align:left;
+}
+    
+.panoramaTour {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+    flex-wrap: wrap;
+}
+
+.heading {
+    margin-left: 5%;
+    align-self: flex-start;
+    margin-bottom: 1rem; 
+    color: black; 
+}
+
+.panoViewer{
+
+    width: 20vw;
+    height: 10vh;
+    border-radius: 20px;
+
+
+}
+
+body{
+    display: block !important;
+}
+
+
+@media (max-width: 960px) {
+
+    .leftArrow{
+       display: none;
+    }
+
+    .panoramaContent{
+        flex-direction: column;
+    }
+
+    .panoramaTour{
+        width: 100%;
+    }
+
+    .panoramaButtonsContainer{
+        flex-grow: 1;
+    } 
+
+    .cardContent{
+        flex-direction: column;
+    }
+
+    .buttonsHeader{
+        display: none;
+    }
+
+}
+
+@media (max-width: 560px){
+
+    .heading h1{
+    margin-right: 10%;
+    }
+
+    .leftArrow{
+        display: none;
+     }
+
+
+
+}
